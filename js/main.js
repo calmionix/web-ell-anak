@@ -171,9 +171,9 @@ function initCounterAnimation() {
 // ============================================
 const popupData = [
     { name: 'Calmionix', action: 'membeli Minecraft Skin Custom' },
-    { name: 'Rafi', action: 'membeli Minecraft Java Account' },
-    { name: 'Andra', action: 'membeli Minecraft Dungeons' },
-    { name: 'Fajar', action: 'membeli Minecraft Bedrock Windows' },
+    { name: 'Nadya', action: 'membeli Minecraft Java Account' },
+    { name: 'Qeela', action: 'membeli Minecraft Dungeons' },
+    { name: 'Raisa', action: 'membeli Minecraft Bedrock Windows' },
     { name: 'Dika', action: 'membeli Minecraft Legends' },
     { name: 'Bima', action: 'membeli Minecraft Java & Bedrock Code' },
     { name: 'Aldi', action: 'memesan jasa promosi TikTok' },
