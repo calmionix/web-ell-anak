@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANAKEMAK - Produk Minecraft & Jasa Promosi Server</title>
+    <meta name="description" content="ANAKEMAK - Toko produk Minecraft dan jasa promosi server Minecraft terpercaya.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <img src="assets/logo.gif" alt="ANAKEMAK Logo" class="loading-logo">
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p class="loading-text">Loading Website...</p>
+            </div>
+            <p class="powered-by">Powered by Calmionix</p>
+        </div>
+    </div>
+
+    <!-- Popup Notification Container -->
+    <div id="popup-container" class="popup-container"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="assets/logo.png" alt="ANAKEMAK">
+                <span>ANAKEMAK</span>
+            </a>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#products" class="nav-link">Produk MC</a></li>
+                <li><a href="#promotion" class="nav-link">Jasa Promosi</a></li>
+                <li><a href="#schedule" class="nav-link">Jadwal Endorse</a></li>
+                <li><a href="#about" class="nav-link">Tentang Kami</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-particles" id="particles"></div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🎮</span>
+                    <span>Minecraft Specialist</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">ANAKEMAK</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Produk Minecraft Terpercaya & Jasa Promosi Server Profesional
+                </p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">
+                        <span>Lihat Produk</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#promotion" class="btn btn-secondary">
+                        <span>Jasa Promosi</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Produk Terjual</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Klien Puas</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="2">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Tahun Pengalaman</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <div class="scroll-indicator">
+                    <span>Scroll</span>
+                    <div class="scroll-arrow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">🛒 Produk</span>
+                    <h2 class="section-title">Produk Minecraft</h2>
+                    <p class="section-description">
+                        Temukan berbagai produk Minecraft untuk meningkatkan pengalaman bermain kamu.
+                    </p>
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="product-image">
+                            <img src="assets/products/minecraft-java-bedrock.jpg" alt="Minecraft Java & Bedrock Account">
+                            <div class="product-overlay">
+                                <span class="sold-badge">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 6L9 17l-5-5"/>
+                                    </svg>
+                                    Terjual 100+
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Minecraft Java & Bedrock Account</h3>
+                            <div class="product-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">150.000</span>
+                            </div>
+                            <a href="https://wa.me/6283192215487?text=Halo%20admin%20Anakemak,%0ASaya%20ingin%20membeli%20produk:%0A%0AMinecraft%20Java%20%26%20Bedrock%20Account%0A%0AMohon%20info%20lebih%20lanjut." 
+                               class="btn btn-buy" target="_blank">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                                Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="product-image">
+                            <img src="assets/products/mc-java-bedrock-code.jpg" alt="Minecraft Java & Bedrock Redeem Code">
+                            <div class="product-overlay">
+                                <span class="sold-badge">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 6L9 17l-5-5"/>
+                                    </svg>
+                                    Terjual 100+
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Minecraft Java & Bedrock Redeem Code</h3>
+                            <div class="product-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">315.000</span>
+                            </div>
+                            <a href="https://wa.me/6283192215487?text=Halo%20admin%20Anakemak,%0ASaya%20ingin%20membeli%20produk:%0A%0AMinecraft%20Java%20%26%20Bedrock%20Redeem%20Code%0A%0AMohon%20info%20lebih%20lanjut." 
+                               class="btn btn-buy" target="_blank">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                                Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-image">
+                            <img src="assets/products/mc-bedrock-windows.jpg" alt="Minecraft Bedrock Windows">
+                            <div class="product-overlay">
+                                <span class="sold-badge">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 6L9 17l-5-5"/>
+                                    </svg>
+                                    Terjual 100+
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Minecraft Bedrock Windows</h3>
+                            <div class="product-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">40.000</span>
+                            </div>
+                            <a href="https://wa.me/6283192215487?text=Halo%20admin%20Anakemak,%0ASaya%20ingin%20membeli%20produk:%0A%0AMinecraft%20Bedrock%20Windows%0A%0AMohon%20info%20lebih%20lanjut." 
+                               class="btn btn-buy" target="_blank">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                                Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="product-image">
+                            <img src="assets/products/mc-legends.jpg" alt="Minecraft Legends">
+                            <div class="product-overlay">
+                                <span class="sold-badge">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 6L9 17l-5-5"/>
+                                    </svg>
+                                    Terjual 100+
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Minecraft Legends</h3>
+                            <div class="product-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">55.000</span>
+                            </div>
+                            <a href="https://wa.me/6283192215487?text=Halo%20admin%20Anakemak,%0ASaya%20ingin%20membeli%20produk:%0A%0AMinecraft%20Legends%0A%0AMohon%20info%20lebih%20lanjut." 
+                               class="btn btn-buy" target="_blank">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                                Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="product-image">
+                            <img src="assets/products/mc-dungeons.jpg" alt="Minecraft Dungeons">
+                            <div class="product-overlay">
+                                <span class="sold-badge">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 6L9 17l-5-5"/>
+                                    </svg>
+                                    Terjual 100+
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Minecraft Dungeons</h3>
+                            <div class="product-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">279.000</span>
+                            </div>
+                            <a href="https://wa.me/6283192215487?text=Halo%20admin%20Anakemak,%0ASaya%20ingin%20membeli%20produk:%0A%0AMinecraft%20Dungeons%0A%0AMohon%20info%20lebih%20lanjut." 
+                               class="btn btn-buy" target="_blank">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                                Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="product-image">
+                            <img src="assets/products/mc-skin.jpg" alt="Minecraft Custom Skin">
+                            <div class="product-overlay">
+                                <span class="sold-badge">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 6L9 17l-5-5"/>
+                                    </svg>
+                                    Terjual 100+
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Minecraft Custom Skin</h3>
+                            <div class="product-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">15.000</span>
+                            </div>
+                            <a href="https://wa.me/6283192215487?text=Halo%20admin%20Anakemak,%0ASaya%20ingin%20memesan:%0A%0AMinecraft%20Custom%20Skin%0A%0AMohon%20info%20lebih%20lanjut." 
+                               class="btn btn-buy" target="_blank">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                                Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotion Services Section -->
+        <section id="promotion" class="promotion section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">📢 Promosi</span>
+                    <h2 class="section-title">Jasa Promosi Server Minecraft</h2>
+                    <p class="section-description">
+                        Promosikan server Minecraft kamu kepada ribuan pemain aktif melalui konten kreator.
+                    </p>
+                </div>
+
+                <!-- YouTube Short -->
+                <div class="promo-category" data-aos="fade-up">
+                    <div class="promo-category-title">
+                        <img src="assets/social/youtube.png" alt="YouTube" class="promo-category-icon">
+                        <h3>YouTube Short</h3>
+                    </div>
+                    <div class="promo-grid">
+                        <div class="promo-card">
+                            <div class="promo-platform-logo">
+                                <img src="assets/social/youtube.png" alt="YouTube">
+                            </div>
+                            <div class="promo-platform-name">YouTube Short</div>
+                            <div class="promo-package-name">Paket A</div>
+                            <div class="promo-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">90.000</span>
+                            </div>
+                            <div class="promo-description">Script dari admin server</div>
+                            <a href="https://wa.me/6283192215487?text=Halo%20admin%20Anakemak,%0ASaya%20ingin%20memesan%20promosi:%0A%0AYouTube%20Short%20Paket%20A%0A%0AMohon%20info%20slot%20yang%20tersedia." 
+                               class="btn btn-order" target="_blank">Pesan Sekarang</a>
+                        </div>
+                        <div class="promo-card featured">
+                            <div class="best-seller-badge">🔥 Best Seller</div>
+                            <div class="promo-platform-logo">
+                                <img src="assets/social/youtube.png" alt="YouTube">
+                            </div>
+                            <div class="promo-platform-name">YouTube Short</div>
+                            <div class="promo-package-name">Paket B</div>
+                            <div class="promo-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">100.000</span>
+                            </div>
+                            <div class="promo-description">Script dibuat oleh kreator</div>
+                            <a href="https://wa.me/6283192215487?text=Halo%20admin%20Anakemak,%0ASaya%20ingin%20memesan%20promosi:%0A%0AYouTube%20Short%20Paket%20B%0A%0AMohon%20info%20slot%20yang%20tersedia." 
+                               class="btn btn-order" target="_blank">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TikTok -->
+                <div class="promo-category" data-aos="fade-up">
+                    <div class="promo-category-title">
+                        <img src="assets/social/tiktok.png" alt="TikTok" class="promo-category-icon">
+                        <h3>TikTok Promosi</h3>
+                    </div>
+                    <div class="promo-grid">
+                        <div class="promo-card">
+                            <div class="promo-platform-logo">
+                                <img src="assets/social/tiktok.png" alt="TikTok">
+                            </div>
+                            <div class="promo-platform-name">TikTok</div>
+                            <div class="promo-package-name">Paket A</div>
+                            <div class="promo-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">90.000</span>
+                            </div>
+                            <div class="promo-description">Script dari admin server</div>
+                            <a href="https://wa.me/6283192215487?text=Halo%20admin%20Anakemak,%0ASaya%20ingin%20memesan%20promosi:%0A%0ATikTok%20Paket%20A%0A%0AMohon%20info%20slot%20yang%20tersedia." 
+                               class="btn btn-order" target="_blank">Pesan Sekarang</a>
+                        </div>
+                        <div class="promo-card featured">
+                            <div class="best-seller-badge">🔥 Best Seller</div>
+                            <div class="promo-platform-logo">
+                                <img src="assets/social/tiktok.png" alt="TikTok">
+                            </div>
+                            <div class="promo-platform-name">TikTok</div>
+                            <div class="promo-package-name">Paket B</div>
+                            <div class="promo-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">100.000</span>
+                            </div>
+                            <div class="promo-description">Script dibuat oleh kreator</div>
+                            <a href="https://wa.me/6283192215487?text=Halo%20admin%20Anakemak,%0ASaya%20ingin%20memesan%20promosi:%0A%0ATikTok%20Paket%20B%0A%0AMohon%20info%20slot%20yang%20tersedia." 
+                               class="btn btn-order" target="_blank">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WhatsApp Channel -->
+                <div class="promo-category" data-aos="fade-up">
+                    <div class="promo-category-title">
+                        <img src="assets/social/whatsapp.png" alt="WhatsApp" class="promo-category-icon">
+                        <h3>Saluran WhatsApp</h3>
+                    </div>
+                    <div class="promo-grid">
+                        <div class="promo-card">
+                            <div class="promo-platform-logo">
+                                <img src="assets/social/whatsapp.png" alt="WhatsApp">
+                            </div>
+                            <div class="promo-platform-name">Saluran WhatsApp</div>
+                            <div class="promo-package-name">Paket A</div>
+                            <div class="promo-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">30.000</span>
+                            </div>
+                            <div class="promo-description">Text + Gambar (Server)</div>
+                            <a href="https://wa.me/6283192215487?text=Halo%20admin%20Anakemak,%0ASaya%20ingin%20memesan%20promosi:%0A%0ASaluran%20WhatsApp%20Paket%20A%0A%0AMohon%20info%20slot%20yang%20tersedia." 
+                               class="btn btn-order" target="_blank">Pesan Sekarang</a>
+                        </div>
+                        <div class="promo-card">
+                            <div class="promo-platform-logo">
+                                <img src="assets/social/whatsapp.png" alt="WhatsApp">
+                            </div>
+                            <div class="promo-platform-name">Saluran WhatsApp</div>
+                            <div class="promo-package-name">Paket B</div>
+                            <div class="promo-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">20.000</span>
+                            </div>
+                            <div class="promo-description">Text Only (Server)</div>
+                            <a href="https://wa.me/6283192215487?text=Halo%20admin%20Anakemak,%0ASaya%20ingin%20memesan%20promosi:%0A%0ASaluran%20WhatsApp%20Paket%20B%0A%0AMohon%20info%20slot%20yang%20tersedia." 
+                               class="btn btn-order" target="_blank">Pesan Sekarang</a>
+                        </div>
+                        <div class="promo-card">
+                            <div class="promo-platform-logo">
+                                <img src="assets/social/whatsapp.png" alt="WhatsApp">
+                            </div>
+                            <div class="promo-platform-name">Saluran WhatsApp</div>
+                            <div class="promo-package-name">Paket C</div>
+                            <div class="promo-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">25.000</span>
+                            </div>
+                            <div class="promo-description">Text + Gambar (Store)</div>
+                            <a href="https://wa.me/6283192215487?text=Halo%20admin%20Anakemak,%0ASaya%20ingin%20memesan%20promosi:%0A%0ASaluran%20WhatsApp%20Paket%20C%0A%0AMohon%20info%20slot%20yang%20tersedia." 
+                               class="btn btn-order" target="_blank">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bundling Packages -->
+                <div class="promo-category bundling" data-aos="fade-up">
+                    <div class="promo-category-title">
+                        <span class="bundling-icon">🎁</span>
+                        <h3>Paket Bundling</h3>
+                    </div>
+                    <div class="promo-grid">
+                        <div class="promo-card bundling-card">
+                            <div class="promo-platform-logo bundling-logo">
+                                <img src="assets/social/tiktok.png" alt="TikTok">
+                                <span>+</span>
+                                <img src="assets/social/youtube.png" alt="YouTube">
+                            </div>
+                            <div class="promo-platform-name">Paket Bundling</div>
+                            <div class="promo-package-name">TikTok + YouTube Paket A</div>
+                            <div class="promo-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">110.000</span>
+                            </div>
+                            <div class="save-badge">Hemat Rp70.000</div>
+                            <div class="promo-description">Kombinasi TikTok & YouTube Short</div>
+                            <a href="https://wa.me/6283192215487?text=Halo%20admin%20Anakemak,%0ASaya%20ingin%20memesan%20paket%20promosi:%0A%0ATikTok%20%2B%20YouTube%20Paket%20A%0A%0AMohon%20info%20slot%20yang%20tersedia." 
+                               class="btn btn-order" target="_blank">Pesan Sekarang</a>
+                        </div>
+                        <div class="promo-card bundling-card">
+                            <div class="promo-platform-logo bundling-logo">
+                                <img src="assets/social/tiktok.png" alt="TikTok">
+                                <span>+</span>
+                                <img src="assets/social/youtube.png" alt="YouTube">
+                            </div>
+                            <div class="promo-platform-name">Paket Bundling</div>
+                            <div class="promo-package-name">TikTok + YouTube Paket B</div>
+                            <div class="promo-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">120.000</span>
+                            </div>
+                            <div class="save-badge">Hemat Rp80.000</div>
+                            <div class="promo-description">Kombinasi TikTok & YouTube Short</div>
+                            <a href="https://wa.me/6283192215487?text=Halo%20admin%20Anakemak,%0ASaya%20ingin%20memesan%20paket%20promosi:%0A%0ATikTok%20%2B%20YouTube%20Paket%20B%0A%0AMohon%20info%20slot%20yang%20tersedia." 
+                               class="btn btn-order" target="_blank">Pesan Sekarang</a>
+                        </div>
+                        <div class="promo-card bundling-card featured">
+                            <div class="best-seller-badge">🔥 Best Seller</div>
+                            <div class="promo-platform-logo bundling-logo">
+                                <img src="assets/social/tiktok.png" alt="TikTok">
+                                <span>+</span>
+                                <img src="assets/social/youtube.png" alt="YouTube">
+                                <span>+</span>
+                                <img src="assets/social/whatsapp.png" alt="WhatsApp">
+                            </div>
+                            <div class="promo-platform-name">Paket Bundling</div>
+                            <div class="promo-package-name">Owning Content 3 in 1</div>
+                            <div class="promo-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">150.000</span>
+                            </div>
+                            <div class="save-badge">Hemat Rp100.000</div>
+                            <div class="promo-description">TikTok + YouTube + Saluran WA</div>
+                            <a href="https://wa.me/6283192215487?text=Halo%20admin%20Anakemak,%0ASaya%20ingin%20memesan%20paket%20promosi:%0A%0AOwning%20Content%203%20in%201%0A%0AMohon%20info%20slot%20yang%20tersedia." 
+                               class="btn btn-order" target="_blank">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="schedule section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">📅 Jadwal</span>
+                    <h2 class="section-title">Jadwal Endorse</h2>
+                    <p class="section-description">
+                        Lihat jadwal promosi yang sudah dipesan dan slot yang masih tersedia.
+                    </p>
+                </div>
+
+                <!-- Real-time Clock -->
+                <div class="realtime-clock" data-aos="fade-up">
+                    <div class="clock-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <div class="clock-info">
+                        <span id="current-date">--</span>
+                        <span id="current-time">--:--:-- WIB</span>
+                    </div>
+                </div>
+
+                <!-- Jadwal Terisi -->
+                <div class="schedule-section" data-aos="fade-up">
+                    <h3 class="schedule-section-title filled-title">
+                        <span class="title-icon">🔴</span>
+                        Jadwal Endorse Terisi
+                    </h3>
+                    <div class="schedule-grid" id="schedule-filled">
+                        <!-- Generated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Slot Tersedia -->
+                <div class="schedule-section" data-aos="fade-up">
+                    <h3 class="schedule-section-title empty-title">
+                        <span class="title-icon">🟢</span>
+                        Slot Endorse Tersedia
+                    </h3>
+                    <div class="schedule-grid" id="schedule-empty">
+                        <!-- Generated by JavaScript -->
+                    </div>
+                    <div class="schedule-cta">
+                        <a href="https://wa.me/6283192215487?text=Halo%20admin%20Anakemak%20,%20saya%20ingin%20memesan%20slot%20endorse." 
+                           class="btn btn-primary btn-large" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                            Pesan Slot Endorse
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content" data-aos="fade-right">
+                        <span class="section-badge">Tentang Kami</span>
+                        <h2 class="section-title">Tentang Anakemak</h2>
+                        <p class="about-text">
+                            Anakemak adalah kreator dan penyedia layanan promosi yang berfokus pada komunitas Minecraft. 
+                            Kami membantu server dan store Minecraft berkembang melalui konten promosi yang menarik 
+                            di TikTok, YouTube, dan platform komunitas.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">🎯</span>
+                                <span>Fokus pada Komunitas Minecraft</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">📈</span>
+                                <span>Pertumbuhan Server yang Terukur</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🤝</span>
+                                <span>Partner Terpercaya</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats" data-aos="fade-left">
+                        <div class="stat-card">
+                            <div class="stat-icon">👥</div>
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-suffix">+</div>
+                            <div class="stat-label">Klien & Partner</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">📹</div>
+                            <div class="stat-number" data-target="500">0</div>
+                            <div class="stat-suffix">+</div>
+                            <div class="stat-label">Konten Dipromosikan</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">⏱️</div>
+                            <div class="stat-number" data-target="2">0</div>
+                            <div class="stat-suffix">+</div>
+                            <div class="stat-label">Tahun Pengalaman</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">⭐</div>
+                            <div class="stat-number" data-target="99">0</div>
+                            <div class="stat-suffix">.9%</div>
+                            <div class="stat-label">Kepuasan Klien</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <img src="assets/logo.png" alt="ANAKEMAK" class="footer-logo">
+                        <h3>ANAKEMAK</h3>
+                        <p>Produk Minecraft & Jasa Promosi Server</p>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li><a href="#products">Produk MC</a></li>
+                            <li><a href="#promotion">Jasa Promosi</a></li>
+                            <li><a href="#schedule">Jadwal Endorse</a></li>
+                            <li><a href="#about">Tentang Kami</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Kontak</h4>
+                        <a href="https://wa.me/6283192215487" target="_blank" class="footer-wa">
+                            <img src="assets/social/whatsapp.png" alt="WhatsApp">
+                            <span>+62 831-9221-5487</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Anakemak. All rights reserved.</p>
+                    <p class="footer-credit">Developed with ❤️ by Calmionix</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
