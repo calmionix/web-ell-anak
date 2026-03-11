@@ -257,10 +257,10 @@ function initClock() {
 }
 
 // ============================================
-// Schedule System - Separated Filled & Empty
+// BUAT JADWAL UPLOAD BG ELLLL
 // ============================================
 const scheduleData = [
-    { date: '2026-03-12', name: 'Stecu SMP', status: 'filled' },
+    { date: '2026-03-12', name: 'BG el nguawurrr', status: 'filled' },
     { date: '2026-03-13', name: 'Natural SMP', status: 'filled' },
     { date: '2026-03-14', name: 'Potato SMP', status: 'filled' },
     { date: '2026-03-15', name: 'Hypix', status: 'filled' },
